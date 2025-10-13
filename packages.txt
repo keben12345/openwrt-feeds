@@ -1,0 +1,1 @@
+automount autosamba bash-completion curl firewall4 ftp iproute2 ipv6-helper libnftnl libpcap libunwind luci-app-firewall nethogs nftables nghttp3 ngtcp2 ppp tcp-brutal zlib
