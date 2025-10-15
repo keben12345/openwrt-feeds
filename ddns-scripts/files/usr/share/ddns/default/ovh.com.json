@@ -1,0 +1,9 @@
+{
+	"name": "ovh.com",
+	"ipv4": {
+		"url": "update_ovh_com.sh"
+	},
+	"ipv6": {
+		"url": "update_ovh_com.sh"
+	}
+}
