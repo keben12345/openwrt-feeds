@@ -73,7 +73,7 @@ config PACKAGE_$(PKG_NAME)_INCLUDE_Geoview
 config PACKAGE_$(PKG_NAME)_INCLUDE_Haproxy
 	bool "Include Haproxy"
 	select PACKAGE_haproxy
-	default y if aarch64||arm||i386||x86_64
+	default n
 
 config PACKAGE_$(PKG_NAME)_INCLUDE_Hysteria
 	bool "Include Hysteria"
