@@ -1,0 +1,12 @@
+--- a/unix/unxcfg.h
++++ b/unix/unxcfg.h
+@@ -118,7 +118,9 @@ typedef struct stat z_stat;
+ #  endif
+ #else
+ #  include <time.h>
++#  if (__GNUC__ < 15)
+    struct tm *gmtime(), *localtime();
++#  endif
+ #endif
+ 
+ #if (defined(BSD4_4) || (defined(SYSV) && defined(MODERN)))
