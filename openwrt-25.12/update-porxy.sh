@@ -43,6 +43,9 @@ mv immortalwrt/luci-app-homeproxy ./
 
 
 
-rm -rf immortalwrt *.patch
-rm -rf img
-ls -d */ | xargs -n 1 basename | paste -sd ' ' - > packages.txt
+# rm -rf immortalwrt *.patch
+# rm -rf img
+# ls -d */ | xargs -n 1 basename | paste -sd ' ' - > packages.txt
+ls -d */ | xargs -n 1 basename | grep "^luci-app" | while read pkg; do
+    echo "CONFIG_PACKAGE_${pkg}=y"
+done > packages.txt
